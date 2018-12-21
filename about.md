@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+In this time and age it is critical to have an online presence for your business. However as your business stays open online 24/7 it is imperative for your website to have proper protection against bad people on the internet.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Donuts security is a team of engineer, programmer, writer and chef that will take care of the safety of your online entities.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Leave it to us, and have a good sleep while your website is making money for you!
 
+## Go Donuts!
 
-[jekyll-organization]: https://github.com/jekyll
+![Donuts Team](/assets/img/donutsteam.jpg)
