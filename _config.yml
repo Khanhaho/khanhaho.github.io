@@ -16,13 +16,11 @@
 title: Donuts Security
 email: khanhaho@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Donut Cybsercurity provides protection for your online businesses and entities.
+    Donuts Cybsercurity provides protection for your online businesses and entities.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: khanhaho
 github_username:  khanhaho
-flickr_username:  khanhaho
-facebook_username: khanhaho
 linkedin_username: khanh-do-oilfield
 
 # Build settings
