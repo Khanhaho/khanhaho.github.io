@@ -20,6 +20,28 @@ There was no other command that showed what was replaced. However VIM has the in
 The truth is I didn't know about this .viminfo file, I saw that from the chat.
 Once there you need to find the code to open the door to the unprepared speaker room. The trick is to use the DE Bruijn sequence generator to generate a set of code that you can trial and error. Since the De Bruijn sequence is a circular sequence, if you keep going as per the list (in the excel file) under MOOC/SANS, eventually you'll get that the code for the room is 0120. Enter that to get into the room, meet Morcel and he says a greeting, which is then used to complete the challenge.
 
+4. This 4th task (Stall Mucking report) has been a real challenge, because I don't know much about Bash command, especially "ps". Turned out, "ps" command under Unix will reveal all command and password of ANY user for any process that are active in the system at the moment. In particular, "ps -ef" will show all UID, PID, and full command, including inline arguments like user ID and password.
+Enter "ps -ef > a.txt", then "cat a.txt" to view the full command. The password and username appears to be "directreindeerflatterystable" and "report-upload" respectively for the smbclient software used for samba file share server.
+At first I thought I could use "sudo cp report.txt //localhost/report-upload/", but then it asked for the elf password, and none of the things I saw from the "ps -ef" are correct. So it appears I need to use smbclient to post this file on the samba server. Seeing note from chat and the correct command is as follow, where the user name and password are as above mentioned.
+smbclient //localhost/report-upload/ directreindeerflatterystable -U report-upload -c 'put report.txt report.txt'
+
+Also check out [Sending file over Samba][send-file-samba]
+
+Once that is done, proceed to watch Brian Hostetler on Digging Deep Through Cloud Repo on YouTube, and download TruffleHog to dig through password in the repo assigned from the HackChallenge.
+
+Download or clone the Shinny Upatree/Santas_castle_automation repo using Git to a local directory. I placed it under c:/Users/myusername.
+
+Install trufflehog as per instruction from the video. Once install, issue the command below to find any secret from the "santas..." repo:
+
+$python trufflehog.py file:///c:/Users/myusername/santas_castle_automation
+
+Trufflehog showed all the private key available from this repo, including the wifi password 'Yippee-ki-yay'.
+
+### Trufflehog rules!
+
+[send-file-samba]: https://unix.stackexchange.com/questions/206415/sending-files-over-samba-with-command-line
+
+
 
 
 ![kringle con](/assets/img/kringlecon.jpg)
