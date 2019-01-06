@@ -39,8 +39,17 @@ Trufflehog showed all the private key available from this repo, including the wi
 
 ### Trufflehog rules!
 
-[send-file-samba]: https://unix.stackexchange.com/questions/206415/sending-files-over-samba-with-command-line
+5. The tasks are getting more complex. To solve this 5th task, I need to help Holly Evergreen with the Curling master terminal, sending a POST using HTTP2 with CURL. Pressing the arrow up button I was able to see previous message. One of those use the parameter --https-prior-knowledge. This would show the webserver response in plain text. In this, the hint told me to send a POST to the server address using CURL with the parameter "Status=on". Below is what I entered to solve this terminal challenge:
 
+$curl --http2-prior-knowledge -d "status=on" -X POST http://localhost:8080/index.php
+
+Check out [curl POST examples][curl-post] 
+
+Now I need to proceed with the OVA Linux image.
+
+
+[send-file-samba]: https://unix.stackexchange.com/questions/206415/sending-files-over-samba-with-command-line
+[curl-post]: https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
 
 
 
